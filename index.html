@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludus - Discord Bot</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset & basic */
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
+        body { background:#2B1B0B; color:#fff; display:flex; flex-direction:column; min-height:100vh; }
+        a { text-decoration:none; color:inherit; }
+
+        /* Header */
+        header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#3C1F0B; border-bottom:2px solid #D2691E; }
+        header img { height:50px; }
+        nav a { margin-left:20px; font-weight:700; transition:color 0.3s; }
+        nav a:hover { color:#FFA500; }
+
+        /* Hero Section */
+        .hero { flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:100px 20px; background:linear-gradient(135deg, #5C2E00, #8B4000); border-radius:15px; margin:20px; box-shadow:0 0 50px rgba(0,0,0,0.5); }
+        .hero h1 { font-size:3em; margin-bottom:20px; color:#FFD580; text-shadow: 2px 2px 4px #000; }
+        .hero p { font-size:1.2em; margin-bottom:40px; color:#FFECB3; max-width:600px; }
+        .buttons a { display:inline-block; background:#D2691E; color:#fff; padding:15px 30px; margin:10px; border-radius:12px; font-weight:700; transition:all 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .buttons a:hover { background:#FFA500; transform:translateY(-3px) scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+
+        /* Footer */
+        footer { text-align:center; padding:20px; background:#3C1F0B; border-top:2px solid #D2691E; font-size:0.9em; color:#FFA07A; }
+        footer a { color:#FFD580; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Ludus Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tos.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Ludus Discord Bot</h1>
+        <p>🍁 Embrace the season with Ludus! Play games, listen to music, adopt pets, level up, and more — all in one cozy Discord bot experience.</p>
+        <div class="buttons">
+            <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands" target="_blank">Invite Bot</a>
+            <a href="https://discord.gg/VB6aSKvq65" target="_blank">Join Psyvrse Server</a>
+            <a href="https://discord.gg/pandian" target="_blank">Bamboo Forest Server</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Ludus • All Rights Reserved • Developed by Psy | <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
