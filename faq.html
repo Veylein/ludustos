@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludus FAQ</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            margin:0; 
+            font-family:'Roboto', sans-serif; 
+            background:#2B1B0B; 
+            color:#fff; 
+        }
+        header, footer { 
+            background:#3C1F0B; 
+            padding:20px 50px; 
+            color:#FFD580; 
+            border-top:2px solid #D2691E; 
+            border-bottom:2px solid #D2691E; 
+        }
+        header img { height:50px; }
+        nav a { margin-left:20px; font-weight:700; color:#FFD580; text-decoration:none; }
+        nav a:hover { color:#FFA500; }
+        main { padding:50px 20px; max-width:900px; margin:0 auto; }
+        h1 { color:#FFD580; margin-bottom:30px; text-align:center; }
+        .faq-item { background:#3C1F0B; border:1px solid #D2691E; border-radius:12px; margin-bottom:20px; padding:20px; cursor:pointer; transition:all 0.3s; }
+        .faq-item:hover { background:#4D260C; }
+        .question { font-weight:700; font-size:1.2em; }
+        .answer { margin-top:10px; display:none; font-weight:400; color:#FFECB3; }
+        footer { text-align:center; font-size:0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Ludus Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="tos.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🍁 Ludus FAQ</h1>
+
+        <div class="faq-item">
+            <div class="question">Q1: How do I invite Ludus to my server?</div>
+            <div class="answer">You can invite Ludus by clicking the "Invite Bot" button on the <a href="index.html">homepage</a> or directly via the Discord OAuth link.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q2: What kind of commands does Ludus have?</div>
+            <div class="answer">Ludus supports games like Go Fish, Blackjack, War, Chess (coming soon), checkers (coming soon), music playback, leveling, counting, jokes, fun facts, animal pics, and more! For the total list of commands do L!help, if any issue persits join the<a href="https://discord.gg/VB6aSKvq65">support server</a>.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q3: Is Ludus safe to use?</div>
+            <div class="answer">Yes! Ludus follows Discord's Terms of Service strictly. It does not collect personal data beyond what Discord provides and never attempts to hack or disrupt servers.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q4: My bot isn’t playing music. What should I do?</div>
+            <div class="answer">Make sure Ludus is in a voice channel, has permission to connect and speak, and that the song URL is valid. Music requires proper FFmpeg setup if self-hosting.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q5: Can I contribute to Ludus development?</div>
+            <div class="answer">Absolutely! Check out the <a href="https://discord.gg/VB6aSKvq65">support server</a> for instructions on contributing, reporting issues, or suggesting features.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q6: Can I get banned from Ludus?</div>
+            <div class="answer">Yes. Attempting to hack, crash, or disrupt the bot or other users may result in a Discord-wide bot blacklist, including your alternate accounts.</div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Ludus • Developed by Psy | <a href="https://github.com/veylein" target="_blank">GitHub</a>
+    </footer>
+
+    <script>
+        const items = document.querySelectorAll('.faq-item');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
